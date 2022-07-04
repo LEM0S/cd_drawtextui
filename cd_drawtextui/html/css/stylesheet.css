@@ -12,15 +12,15 @@ html, body{
     100% {opacity:1; top:50%}
 }
 @keyframes fadeOut {
-    0% {opacity:1; top:50%; right:1%}
-    100% {opacity:0; right:-15%;}
+    0% {opacity:1; top:50%; left:1%}
+    100% {opacity:0; left:-15%;}
 }
 #container{
     position:absolute;
     top:50%;
-    right:1%;
+    left:1%;
     /* width:15%; */
-    max-width:25%;
+    max-width:50%;
     transform: translateY(-50%);
    
 }
@@ -31,10 +31,9 @@ html, body{
     animation: fadeOut ease 1s forwards;
 }
 #box{
-    width:100%;
+    width:105%;
     background: linear-gradient(180deg, rgb(0, 153, 255) 0%, rgb(50, 173, 255) 100%);
     border-radius:5px;
-    
 }
 
 #title, #text{
@@ -56,6 +55,15 @@ html, body{
     text-transform: none;
     text-shadow: 1px 1px 1px rgba(1,1,1,1);
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 }
 
+.success {
+    background: rgb(114, 204, 114);
+    color: #fff;
+}
+
+.error {
+    background: rgb(224, 50, 50);
+    color: #fff;
+}
